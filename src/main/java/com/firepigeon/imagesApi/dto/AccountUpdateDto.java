@@ -5,8 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 
-import java.sql.Timestamp;
-import java.time.Instant;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -16,5 +15,5 @@ public class AccountUpdateDto {
     private String username;
     private String email;
     @JsonIgnore
-    private Timestamp updateAt = Timestamp.from(Instant.now());
+    private Date updateAt = new Date();
 }

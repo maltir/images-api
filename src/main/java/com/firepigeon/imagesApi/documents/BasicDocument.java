@@ -7,7 +7,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Version;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
 @Data
 @Document
@@ -16,10 +16,10 @@ public class BasicDocument {
     protected String id;
     @JsonProperty("create_at")
     @NotNull
-    protected Timestamp createAt;
+    protected Date createAt;
     @JsonProperty("update_at")
     @NotNull
-    protected Timestamp updateAt;
+    protected Date updateAt;
     @Version
     protected Integer version;
 }

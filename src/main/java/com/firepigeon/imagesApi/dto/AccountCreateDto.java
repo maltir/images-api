@@ -5,8 +5,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.sql.Timestamp;
-import java.time.Instant;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -16,7 +15,7 @@ public class AccountCreateDto {
     @NotNull
     private String email;
     @JsonIgnore
-    private Timestamp createAt = Timestamp.from(Instant.now());
+    private Date createAt = new Date();
     @JsonIgnore
-    private Timestamp updateAt = Timestamp.from(Instant.now());
+    private Date updateAt = new Date();
 }
