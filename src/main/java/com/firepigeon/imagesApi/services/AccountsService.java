@@ -30,4 +30,9 @@ public class AccountsService {
     public Account update(Account account) {
         return accountsRepository.save(account);
     }
+
+    @Transactional
+    public void delete(String id) {
+        accountsRepository.deleteById(id);
+    }
 }
