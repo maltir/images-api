@@ -14,6 +14,8 @@ public class AccountCreateDto {
     private String username;
     @NotNull
     private String email;
+    @NotNull
+    private String password;
     @JsonIgnore
     private Date createAt = new Date();
     @JsonIgnore

@@ -4,7 +4,7 @@ import com.firepigeon.imagesApi.documents.Account;
 import com.firepigeon.imagesApi.dto.AccountCreateDto;
 import com.firepigeon.imagesApi.dto.AccountUpdateDto;
 import com.firepigeon.imagesApi.services.AccountsService;
-import com.firepigeon.imagesApi.util.DTO;
+import com.firepigeon.imagesApi.util.annotation.DTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

@@ -1,6 +1,7 @@
 package com.firepigeon.imagesApi.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.firepigeon.imagesApi.util.annotation.DTO;
 import jakarta.validation.constraints.NotNull;
 import org.modelmapper.ModelMapper;
 import org.springframework.core.MethodParameter;

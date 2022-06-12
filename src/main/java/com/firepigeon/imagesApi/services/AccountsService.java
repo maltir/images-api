@@ -2,6 +2,7 @@ package com.firepigeon.imagesApi.services;
 
 import com.firepigeon.imagesApi.documents.Account;
 import com.firepigeon.imagesApi.repositories.AccountsRepository;
+import com.firepigeon.imagesApi.util.enums.Roles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -24,6 +25,7 @@ public class AccountsService {
 
     @Transactional
     public Account create(Account account) {
+        account.getRoles().add(Roles.USER.name());
         return accountsRepository.insert(account);
     }
 

@@ -1,4 +1,4 @@
-package com.firepigeon.imagesApi.util;
+package com.firepigeon.imagesApi.util.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
